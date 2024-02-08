@@ -16,7 +16,7 @@ df = pd.read_csv(text_file_path, sep='\t')
 
 # Convert all columns to numeric, coerce errors to null values
 for c in df.columns:
-    df[c] = pd.to_numeric(df[c], errors='coerce')
+    #df[c] = pd.to_numeric(df[c], errors='coerc')
 
 # Make sure binary columns are encoded as 0 and 1
 for c in df.columns[df.nunique() == 2]:
